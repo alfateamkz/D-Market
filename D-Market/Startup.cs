@@ -8,6 +8,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using D_Market.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace D_Market
 {
@@ -24,6 +26,7 @@ namespace D_Market
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddDbContext<DatabaseModel>(o => o.UseSqlServer(GlobalVariables.ConnectionString));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

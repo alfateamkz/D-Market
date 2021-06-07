@@ -30,5 +30,9 @@ namespace D_Market.Models.DatabaseEntities
         List<Product> Products { get; set; }
         List<ShopTransaction> Transactions { get; set; }
         List<Employee> Employee { get; set; }
+        [Required]
+        public bool IsDeleted { get; set; }
+        [Required]
+        public bool IsHidden { get; set; }
     }
 }

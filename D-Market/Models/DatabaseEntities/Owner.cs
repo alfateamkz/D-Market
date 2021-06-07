@@ -21,7 +21,6 @@ namespace D_Market.Models.DatabaseEntities
         [Required]
         [MaxLength(25)]
         public string Password { get; set; }
-
         List<Shop> Shops { get; set; }
 
     }

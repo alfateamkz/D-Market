@@ -20,7 +20,7 @@ namespace D_Market.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return View("/views/home/mainpage.cshtml");
         }
 
         public IActionResult Privacy()

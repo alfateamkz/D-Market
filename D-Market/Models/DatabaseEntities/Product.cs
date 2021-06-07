@@ -29,5 +29,9 @@ namespace D_Market.Models.DatabaseEntities
         public string Description { get; set; }
         [Required]
         public string Icon { get; set; }
+        [Required]
+        public bool IsDeleted { get; set; }
+        [Required]
+        public bool IsHidden { get; set; }
     }
 }

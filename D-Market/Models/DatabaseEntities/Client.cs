@@ -28,6 +28,10 @@ namespace D_Market.Models.DatabaseEntities
         public string Icon { get; set; }
         [Required]
         public int OrderAmount { get; set; }
+        [Required]
+        public bool IsDeleted { get; set; }
+        [Required]
+        public bool IsHidden { get; set; }
 
     }
 }

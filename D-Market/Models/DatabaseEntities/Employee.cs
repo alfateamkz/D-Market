@@ -21,5 +21,9 @@ namespace D_Market.Models.DatabaseEntities
         [Required]
         public int PositionID { get; set; }
         public Position Position { get; set; }
+        [Required]
+        public bool IsDeleted { get; set; }
+        [Required]
+        public bool IsHidden { get; set; }
     }
 }
