@@ -12,9 +12,9 @@ namespace D_Market.Models
      
         public DatabaseModel(DbContextOptions<DatabaseModel> options) : base(options)
         {
-            Database.EnsureCreated();
+            Database.Migrate();
         }
-
+        public DbSet<Admin> Admins { get; set; }
         public DbSet<Client> Clients { get; set; }
         public DbSet<ClientTransaction> ClientTransactions { get; set; }
         public DbSet<Dispute> Disputes { get; set; }

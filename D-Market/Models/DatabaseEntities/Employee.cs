@@ -24,6 +24,6 @@ namespace D_Market.Models.DatabaseEntities
         [Required]
         public bool IsDeleted { get; set; }
         [Required]
-        public bool IsHidden { get; set; }
+        public bool IsBanned { get; set; }
     }
 }

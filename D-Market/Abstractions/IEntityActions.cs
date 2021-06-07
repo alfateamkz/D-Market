@@ -9,18 +9,26 @@ namespace D_Market.Abstractions
     {
         void Create(T entity);
     }
-
-    public interface IEntityGet<T>
+    public interface IEntityGetList<T>
     {
-        List<T> Get();
+        List<T> GetList();
     }
     public interface IEntityUpdate<T>
     {
         void Update(T entity);
     }
 
+    public interface IEntityBan
+    {
+        void Ban(int id);
+    }
     public interface IEntityPseudoDelete
     {
         void PseudoDelete(int id);
+    }
+
+    public interface IEntityHide
+    {
+        void Hide(int id);
     }
 }
